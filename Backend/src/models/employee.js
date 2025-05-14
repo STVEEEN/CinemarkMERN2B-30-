@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import { Schema, model } from "mongoose";
 
 const employeesSchema = new Schema(
@@ -45,4 +46,4 @@ const employeesSchema = new Schema(
   }
 );
 
-export default model("Employee", employeesSchema);
+export default mongoose.models.employee || model("employee", employeesSchema);

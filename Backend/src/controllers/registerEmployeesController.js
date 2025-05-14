@@ -1,9 +1,9 @@
-const registerEmployeesController = {};
-import Employee from "../models/Employees.js";
+import Employee from "../models/employee.js";
 import bcryptjs from "bcryptjs"
 import jsonwebtoken from "jsonwebtoken"
 import { config } from "../config.js";
 
+const registerEmployeesController = {};
 
 registerEmployeesController.register = async (req, res) => {
   const { name, email, password, telephone,  address,  hireDate, salary, status} = req.body;

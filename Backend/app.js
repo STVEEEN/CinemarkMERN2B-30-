@@ -1,6 +1,6 @@
 import express from "express";
 import clientsRoutes from "./src/routes/clients.js";
-import employeesRoutes from "./src/routes/employees.js";
+import employeesRoutes from "./src/routes/employee.js";
 import registerEmployeesRoutes from "./src/routes/registerEmployees.js";
 import loginRoutes from "./src/routes/login.js";
 import cookieParser from "cookie-parser";

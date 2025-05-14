@@ -1,6 +1,6 @@
 const loginController = {};
-import EmployeesModel from "../models/Employees.js";
-import clientsModel from "../models/Clients.js"
+import EmployeesModel from "../models/employee.js";
+import clientsModel from "../models/client.js"
 import bcryptjs from "bcryptjs"
 import jsonwebtoken from "jsonwebtoken"
 import { config } from "../config.js";

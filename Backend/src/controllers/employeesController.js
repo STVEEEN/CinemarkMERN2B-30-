@@ -1,6 +1,6 @@
-const employeesController = {};
-import employeesModel from "../models/Employees.js";
+import employeesModel from "../models/employee.js";
 
+const employeesController = {};
 
 employeesController.getEmployees = async (req, res) => {
   const employees = await employeesModel.find();
