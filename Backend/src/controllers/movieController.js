@@ -2,14 +2,12 @@ import moviesModel from "../models/Movies.js"
 import { v2 as cloudinary } from "cloudinary";
 import { config } from "../config.js";
  
-//1.Configurar cloudinary
 cloudinary.config({
     cloud_name: config.cloudinary.cloudinary_name,
     api_key: config.cloudinary.cloudinary_api_key,
     api_secret:config.cloudinary.cloudinary_api_secret
 });
  
-//2. Array de funciones vacio
 const  movieController = {}
  
 movieController.getAllPosts = async (req, res) =>{
@@ -17,7 +15,6 @@ movieController.getAllPosts = async (req, res) =>{
     res.json(posts)
 }
  
-//3.Subir un post al blog
 movieController.createPost = async (req, res)=>{
     try {
         const{title, description, director, gender, year, duration} =  req.body;
